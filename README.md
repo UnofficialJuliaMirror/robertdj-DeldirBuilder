@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/robertdj/DeldirBuilder.svg?branch=master)](https://travis-ci.org/robertdj/DeldirBuilder)
 
-This repository builds binary artifacts for the DeldirBuilder project. Binary artifacts are automatically uploaded to
+This repository builds binary artifacts for the Deldir project. Binary artifacts are automatically uploaded to
 [this repository's GitHub releases page](https://github.com/robertdj/DeldirBuilder/releases) whenever a tag is created
 on this repository.
 
