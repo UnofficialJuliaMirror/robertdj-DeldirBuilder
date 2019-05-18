@@ -15,8 +15,17 @@ sources = [
 # Bash recipe for building across all platforms
 script = raw"""
 cd $WORKSPACE/srcdir/deldir/src
-for f in *.f; do   ${FC} -fPIC -O2 -pipe -g -c "${f}" -o "$(basename "${f}" .f).o"; done
-if [[ ${target} == *-mingw32 ]]; then     libdir="bin"; else     libdir="lib"; fi
+
+for f in *.f; do
+    ${FC} -fPIC -O2 -pipe -g -c "${f}" -o "$(basename "${f}" .f).o"
+done
+
+if [[ ${target} == *-mingw32 ]]; then
+    libdir="bin"
+else
+    libdir="lib"
+fi
+
 mkdir -p "${prefix}/${libdir}"
 ${CC} -shared -o ${prefix}/${libdir}/libdeldir.${dlext} *.o
 
