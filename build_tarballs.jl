@@ -3,12 +3,14 @@
 using BinaryBuilder
 
 name = "DeldirBuilder"
-version = v"0.1.9"
+version = v"0.1.15"
 
 # Collection of sources required to build DeldirBuilder
 sources = [
     "https://cran.r-project.org/src/contrib/Archive/deldir/deldir_0.1-9.tar.gz" =>
     "090aba6747efc77424a44bf4aaa229dfc01fff7752720689bb70cd861df61f6a",
+    "https://cran.r-project.org/src/contrib/Archive/deldir/deldir_0.1-15.tar.gz" =>
+    "571011c208829f47ecd9f92a19fd94a8eb59de5a2645ab8c62e73926ade30710",
 
 ]
 
