@@ -7,7 +7,7 @@ version = v"0.1.9"
 
 # Collection of sources required to build DeldirBuilder
 sources = [
-    "https://cran.microsoft.com/snapshot/2016-02-01/src/contrib/deldir_0.1-9.tar.gz" =>
+    "https://cran.r-project.org/src/contrib/Archive/deldir/deldir_0.1-9.tar.gz" =>
     "090aba6747efc77424a44bf4aaa229dfc01fff7752720689bb70cd861df61f6a",
 
 ]
@@ -28,7 +28,6 @@ fi
 
 mkdir -p "${prefix}/${libdir}"
 ${CC} -shared -o ${prefix}/${libdir}/libdeldir.${dlext} *.o
-
 """
 
 # These are the platforms we will build for by default, unless further
